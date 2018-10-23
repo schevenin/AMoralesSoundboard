@@ -1,0 +1,90 @@
+{
+  "author" : "Iconizer",
+  "version" : "1.0",
+  "images" : [
+    {
+      "filename" : "iphone-appicon@3x.png",
+      "idiom" : "iphone",
+      "expected-size" : "180",
+      "size" : "60x60",
+      "scale" : "3x"
+    },
+    {
+      "filename" : "iphone-spotlight@2x.png",
+      "idiom" : "iphone",
+      "expected-size" : "80",
+      "size" : "40x40",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "iphone-spotlight@3x.png",
+      "idiom" : "iphone",
+      "expected-size" : "120",
+      "size" : "40x40",
+      "scale" : "3x"
+    },
+    {
+      "filename" : "iphone-appicon@2x.png",
+      "idiom" : "iphone",
+      "expected-size" : "120",
+      "size" : "60x60",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "iphone-oldAppicon@1x.png",
+      "idiom" : "iphone",
+      "expected-size" : "57",
+      "size" : "57x57",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "iphone-settings@2x.png",
+      "idiom" : "iphone",
+      "expected-size" : "58",
+      "size" : "29x29",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "iphone-settings@1x.png",
+      "idiom" : "iphone",
+      "expected-size" : "29",
+      "size" : "29x29",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "iphone-settings@3x.png",
+      "idiom" : "iphone",
+      "expected-size" : "87",
+      "size" : "29x29",
+      "scale" : "3x"
+    },
+    {
+      "filename" : "iphone-oldAppicon@2x.png",
+      "idiom" : "iphone",
+      "expected-size" : "114",
+      "size" : "57x57",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "iphone-notification@2x.png",
+      "idiom" : "iphone",
+      "expected-size" : "40",
+      "size" : "20x20",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "iphone-notification@3x.png",
+      "idiom" : "iphone",
+      "expected-size" : "60",
+      "size" : "20x20",
+      "scale" : "3x"
+    },
+    {
+      "filename" : "ios-marketing.png",
+      "idiom" : "ios-marketing",
+      "expected-size" : "1024",
+      "size" : "1024x1024",
+      "scale" : "1x"
+    }
+  ]
+}
