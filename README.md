@@ -1,3 +1,3 @@
 Guatemalan Embassy
 
-This code was very rushed so please, if you find any optimizations to the code, submit an issue or contact me.
+Something I made for fun as a side project.
