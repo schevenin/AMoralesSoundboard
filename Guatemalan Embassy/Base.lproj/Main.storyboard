@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c0Q-Oz-Dwu" userLabel="Buttons">
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c0Q-Oz-Dwu" userLabel="Buttons">
                                 <rect key="frame" x="67.5" y="242.5" width="240" height="182"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWv-kz-Jqu">
@@ -66,7 +67,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="CQs-KR-fpd" firstAttribute="top" secondItem="dWv-kz-Jqu" secondAttribute="bottom" constant="4" id="6Jm-NV-QdX"/>
                                     <constraint firstItem="CQs-KR-fpd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="c0Q-Oz-Dwu" secondAttribute="leading" constant="95" id="8yu-26-R9B"/>
@@ -88,7 +89,7 @@
                                     <constraint firstAttribute="bottom" secondItem="CQs-KR-fpd" secondAttribute="bottom" constant="8" id="x3e-F1-ePw"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jmy-hj-XlB" userLabel="Logo">
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jmy-hj-XlB" userLabel="Logo">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="242.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GuatemalanEmbassyLogo-1" translatesAutoresizingMaskIntoConstraints="NO" id="TQV-e6-CoI">
@@ -99,13 +100,13 @@
                                         </constraints>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="TQV-e6-CoI" firstAttribute="centerX" secondItem="jmy-hj-XlB" secondAttribute="centerX" id="g5Q-wW-70U"/>
                                     <constraint firstItem="TQV-e6-CoI" firstAttribute="centerY" secondItem="jmy-hj-XlB" secondAttribute="centerY" id="oe2-Ps-Kll"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="14d-s0-oBL" userLabel="Name">
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="14d-s0-oBL" userLabel="Name">
                                 <rect key="frame" x="0.0" y="424.5" width="375" height="242.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© 2018 Rogelio Schevenin Jr." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wET-ac-Fnz">
@@ -133,7 +134,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="wET-ac-Fnz" secondAttribute="bottom" constant="8.5" id="ajW-d6-tus"/>
                                     <constraint firstItem="54R-fq-eBJ" firstAttribute="leading" secondItem="14d-s0-oBL" secondAttribute="leading" constant="155" id="gTh-KS-X4N"/>
