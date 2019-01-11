@@ -13,7 +13,7 @@
 		31F7101D217D706100A7F85F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31F7101C217D706100A7F85F /* Assets.xcassets */; };
 		31F71020217D706100A7F85F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31F7101E217D706100A7F85F /* LaunchScreen.storyboard */; };
 		31F71042217E40C600A7F85F /* mijo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 31F7103D217E40C500A7F85F /* mijo.mp3 */; };
-		31F71043217E40C600A7F85F /* embassy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 31F7103E217E40C500A7F85F /* embassy.mp3 */; };
+		31F71043217E40C600A7F85F /* guatemalan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 31F7103E217E40C500A7F85F /* guatemalan.mp3 */; };
 		31F71044217E40C600A7F85F /* papas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 31F7103F217E40C500A7F85F /* papas.mp3 */; };
 		31F71045217E40C600A7F85F /* enamorado.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 31F71040217E40C500A7F85F /* enamorado.mp3 */; };
 		31F71046217E40C600A7F85F /* chisme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 31F71041217E40C500A7F85F /* chisme.mp3 */; };
@@ -28,7 +28,7 @@
 		31F7101F217D706100A7F85F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31F71021217D706100A7F85F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31F7103D217E40C500A7F85F /* mijo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = mijo.mp3; path = Assets/Audio/mijo.mp3; sourceTree = SOURCE_ROOT; };
-		31F7103E217E40C500A7F85F /* embassy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = embassy.mp3; path = Assets/Audio/embassy.mp3; sourceTree = SOURCE_ROOT; };
+		31F7103E217E40C500A7F85F /* guatemalan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = guatemalan.mp3; path = Assets/Audio/guatemalan.mp3; sourceTree = SOURCE_ROOT; };
 		31F7103F217E40C500A7F85F /* papas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = papas.mp3; path = Assets/Audio/papas.mp3; sourceTree = SOURCE_ROOT; };
 		31F71040217E40C500A7F85F /* enamorado.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = enamorado.mp3; path = Assets/Audio/enamorado.mp3; sourceTree = SOURCE_ROOT; };
 		31F71041217E40C500A7F85F /* chisme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = chisme.mp3; path = Assets/Audio/chisme.mp3; sourceTree = SOURCE_ROOT; };
@@ -65,7 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				31F71041217E40C500A7F85F /* chisme.mp3 */,
-				31F7103E217E40C500A7F85F /* embassy.mp3 */,
+				31F7103E217E40C500A7F85F /* guatemalan.mp3 */,
 				31F71040217E40C500A7F85F /* enamorado.mp3 */,
 				31F7103D217E40C500A7F85F /* mijo.mp3 */,
 				31F7103F217E40C500A7F85F /* papas.mp3 */,
@@ -137,7 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31F71043217E40C600A7F85F /* embassy.mp3 in Resources */,
+				31F71043217E40C600A7F85F /* guatemalan.mp3 in Resources */,
 				31F71046217E40C600A7F85F /* chisme.mp3 in Resources */,
 				31F71020217D706100A7F85F /* LaunchScreen.storyboard in Resources */,
 				31F71044217E40C600A7F85F /* papas.mp3 in Resources */,

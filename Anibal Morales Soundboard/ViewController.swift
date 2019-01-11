@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  Guatemalan Embassy
+//  Anibal Morales Soundboard
 //
 //  Created by Rogelio Schevenin on 3/27/18.
 //  Copyright © 2018 Rogelio Schevenin. All rights reserved.
@@ -12,7 +12,7 @@ import AVFoundation
 class ViewController: UIViewController {
     
     func stopAudio() {
-        audioPlayerEmbassy.stop()
+        audioPlayerGuatemalan.stop()
         audioPlayerChisme.stop()
         audioPlayerPapas.stop()
         audioPlayerEnamorado.stop()
@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     }
     
     @IBOutlet weak var copyright: UILabel!
-    @IBOutlet weak var buttonEmbassy: UIButton!
+    @IBOutlet weak var buttonGuatemalan: UIButton!
     @IBOutlet weak var buttonChisme: UIButton!
     @IBOutlet weak var buttonPapas: UIButton!
     @IBOutlet weak var buttonEnamorado: UIButton!
@@ -30,8 +30,8 @@ class ViewController: UIViewController {
     @IBAction func buttonStop(_ sender: UIButton) {
         stopAudio()
     }
-    @IBAction func buttonEmbassy(_ sender: UIButton) {
-        audioPlayerEmbassy.play()
+    @IBAction func buttonGuatemalan(_ sender: UIButton) {
+        audioPlayerGuatemalan.play()
     }
     @IBAction func buttonChisme(_ sender: UIButton) {
         audioPlayerChisme.play()
@@ -45,7 +45,7 @@ class ViewController: UIViewController {
     @IBAction func buttonMijo(_ sender: UIButton) {
         audioPlayerMijo.play()
     }
-    var audioPlayerEmbassy : AVAudioPlayer!
+    var audioPlayerGuatemalan : AVAudioPlayer!
     var audioPlayerChisme : AVAudioPlayer!
     var audioPlayerPapas : AVAudioPlayer!
     var audioPlayerEnamorado : AVAudioPlayer!
@@ -54,15 +54,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
                 
-        let urlEmbassy = Bundle.main.url(forResource: "embassy", withExtension: "mp3")
+        let urlGuatemalan = Bundle.main.url(forResource: "guatemalan", withExtension: "mp3")
         let urlChisme = Bundle.main.url(forResource: "chisme", withExtension: "mp3")
         let urlPapas = Bundle.main.url(forResource: "papas", withExtension: "mp3")
         let urlEnamorado = Bundle.main.url(forResource: "enamorado", withExtension: "mp3")
         let urlMijo = Bundle.main.url(forResource: "mijo", withExtension: "mp3")
         
         do {
-            audioPlayerEmbassy = try AVAudioPlayer(contentsOf: urlEmbassy!)
-            audioPlayerEmbassy.prepareToPlay()
+            audioPlayerGuatemalan = try AVAudioPlayer(contentsOf: urlGuatemalan!)
+            audioPlayerGuatemalan.prepareToPlay()
             
         }catch let error as NSError {
             print(error.debugDescription)
