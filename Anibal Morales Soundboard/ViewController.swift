@@ -33,6 +33,9 @@ class ViewController: UIViewController {
         audioPlayerMartin.stop()
     }
     
+    
+    @IBOutlet weak var clickOutput: UILabel!
+    
     @IBOutlet weak var buttonGuatemalan: UIButton!
     @IBOutlet weak var buttonMartin: UIButton!
     @IBOutlet weak var buttonChisme: UIButton!
@@ -72,7 +75,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
         let urlGuatemalan = Bundle.main.url(forResource: "guatemalan", withExtension: "mp3")
         let urlChisme = Bundle.main.url(forResource: "chisme", withExtension: "mp3")

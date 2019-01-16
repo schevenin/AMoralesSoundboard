@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		31F0419521E9A6D70092B380 /* RootPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F0419421E9A6D70092B380 /* RootPageViewController.swift */; };
+		31E1906021EE4FB200EE88F8 /* ViewControllerClicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E1905F21EE4FB200EE88F8 /* ViewControllerClicker.swift */; };
+		31E1906421EEE56300EE88F8 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E1906321EEE56300EE88F8 /* GameViewController.swift */; };
+		31E1906821EEE5F800EE88F8 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E1906521EEE5F700EE88F8 /* GameScene.swift */; };
+		31E1906921EEE5F800EE88F8 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 31E1906621EEE5F800EE88F8 /* Actions.sks */; };
+		31E1906A21EEE5F800EE88F8 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 31E1906721EEE5F800EE88F8 /* GameScene.sks */; };
+		31E1906E21EEF02A00EE88F8 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E1906D21EEF02A00EE88F8 /* MenuVC.swift */; };
 		31F0419721E9C8030092B380 /* martin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 31F0419621E9C8030092B380 /* martin.mp3 */; };
 		31F71016217D706000A7F85F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F71015217D706000A7F85F /* AppDelegate.swift */; };
 		31F71018217D706000A7F85F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F71017217D706000A7F85F /* ViewController.swift */; };
@@ -22,7 +27,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		31F0419421E9A6D70092B380 /* RootPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPageViewController.swift; sourceTree = "<group>"; };
+		31E1905F21EE4FB200EE88F8 /* ViewControllerClicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerClicker.swift; sourceTree = "<group>"; };
+		31E1906321EEE56300EE88F8 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		31E1906521EEE5F700EE88F8 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		31E1906621EEE5F800EE88F8 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		31E1906721EEE5F800EE88F8 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		31E1906D21EEF02A00EE88F8 /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 		31F0419621E9C8030092B380 /* martin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = martin.mp3; path = Assets/Audio/martin.mp3; sourceTree = SOURCE_ROOT; };
 		31F71012217D706000A7F85F /* Anibal Morales Soundboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Anibal Morales Soundboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		31F71015217D706000A7F85F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,11 +86,16 @@
 				31F0419621E9C8030092B380 /* martin.mp3 */,
 				31F71015217D706000A7F85F /* AppDelegate.swift */,
 				31F71017217D706000A7F85F /* ViewController.swift */,
-				31F0419421E9A6D70092B380 /* RootPageViewController.swift */,
+				31E1906321EEE56300EE88F8 /* GameViewController.swift */,
+				31E1905F21EE4FB200EE88F8 /* ViewControllerClicker.swift */,
+				31E1906D21EEF02A00EE88F8 /* MenuVC.swift */,
 				31F71019217D706000A7F85F /* Main.storyboard */,
 				31F7101C217D706100A7F85F /* Assets.xcassets */,
 				31F7101E217D706100A7F85F /* LaunchScreen.storyboard */,
 				31F71021217D706100A7F85F /* Info.plist */,
+				31E1906621EEE5F800EE88F8 /* Actions.sks */,
+				31E1906721EEE5F800EE88F8 /* GameScene.sks */,
+				31E1906521EEE5F700EE88F8 /* GameScene.swift */,
 			);
 			path = "Anibal Morales Soundboard";
 			sourceTree = "<group>";
@@ -146,12 +161,14 @@
 				31F71043217E40C600A7F85F /* guatemalan.mp3 in Resources */,
 				31F71046217E40C600A7F85F /* chisme.mp3 in Resources */,
 				31F71020217D706100A7F85F /* LaunchScreen.storyboard in Resources */,
+				31E1906A21EEE5F800EE88F8 /* GameScene.sks in Resources */,
 				31F71044217E40C600A7F85F /* papas.mp3 in Resources */,
 				31F71045217E40C600A7F85F /* enamorado.mp3 in Resources */,
 				31F71042217E40C600A7F85F /* mijo.mp3 in Resources */,
 				31F7101D217D706100A7F85F /* Assets.xcassets in Resources */,
 				31F0419721E9C8030092B380 /* martin.mp3 in Resources */,
 				31F7101B217D706000A7F85F /* Main.storyboard in Resources */,
+				31E1906921EEE5F800EE88F8 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,9 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31F0419521E9A6D70092B380 /* RootPageViewController.swift in Sources */,
+				31E1906821EEE5F800EE88F8 /* GameScene.swift in Sources */,
+				31E1906421EEE56300EE88F8 /* GameViewController.swift in Sources */,
+				31E1906021EE4FB200EE88F8 /* ViewControllerClicker.swift in Sources */,
 				31F71018217D706000A7F85F /* ViewController.swift in Sources */,
 				31F71016217D706000A7F85F /* AppDelegate.swift in Sources */,
+				31E1906E21EEF02A00EE88F8 /* MenuVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

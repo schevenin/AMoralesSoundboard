@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xH9-Rg-BTE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jIe-Cc-cbT">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,24 +10,35 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root Page View Controller-->
-        <scene sceneID="ShP-1F-JVO">
+        <!--Tab Bar Controller-->
+        <scene sceneID="GBd-oT-rZg">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="xH9-Rg-BTE" customClass="RootPageViewController" customModule="Anibal_Morales_Soundboard" customModuleProvider="target" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Xnp-1c-qF6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tabBarController id="jIe-Cc-cbT" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="Hps-4P-ixW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="A8U-LC-qQN"/>
+                        <segue destination="9nq-pu-aZf" kind="relationship" relationship="viewControllers" id="V3m-SA-V66"/>
+                        <segue destination="cjb-UN-mIN" kind="relationship" relationship="viewControllers" id="65i-AC-2Uk"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jn9-3J-65L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-700" y="889"/>
+            <point key="canvasLocation" x="-1361" y="372"/>
         </scene>
-        <!--View Controller-->
+        <!--Sounds-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="PageOne" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Anibal_Morales_Soundboard" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Anibal_Morales_Soundboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="duP-wj-y4N">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0p1-0f-7E9" userLabel="Header">
@@ -142,10 +153,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cS0-4i-eRA" userLabel="Footer">
-                                <rect key="frame" x="0.0" y="509.5" width="375" height="157.5"/>
+                                <rect key="frame" x="0.0" y="509.5" width="375" height="108.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="54R-fq-eBJ">
-                                        <rect key="frame" x="157.5" y="49" width="60" height="60"/>
+                                        <rect key="frame" x="157.5" y="24.5" width="60" height="60"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" button="YES" image="YES"/>
@@ -232,6 +243,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Sounds" id="ONf-I0-S4z"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="buttonChisme" destination="Dkw-PI-mNL" id="s1C-VC-PNY"/>
                         <outlet property="buttonEnamorado" destination="P6j-fS-Oma" id="gZ8-xY-Ue0"/>
@@ -244,58 +257,124 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="128.80000000000001" y="884.70764617691157"/>
+            <point key="canvasLocation" x="-636" y="372"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Fe5-Xo-nWT">
+        <!--Clicker-->
+        <scene sceneID="QRd-l2-dFd">
             <objects>
-                <viewController storyboardIdentifier="PageTwo" id="xCN-th-WVG" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="nAT-j6-4O6">
+                <viewController id="9nq-pu-aZf" userLabel="Clicker" customClass="ViewControllerClicker" customModule="Anibal_Morales_Soundboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qUu-Vz-CAv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="x12-i2-fzd">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypR-eh-pOi">
-                                <rect key="frame" x="117.5" y="315.5" width="140" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="140" id="Z7W-tE-otO"/>
-                                    <constraint firstAttribute="height" constant="36" id="p2g-cQ-JHc"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xqn-KK-Y68">
+                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="clickerButton:" destination="9nq-pu-aZf" eventType="touchUpInside" id="Yuu-bI-yIx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Coins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhf-Lq-S6v">
+                                <rect key="frame" x="166" y="124" width="44" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rogelio Schevenin Jr." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOE-j4-YKo">
-                                <rect key="frame" x="92.5" y="359" width="190" height="24"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="190" id="5dq-Yj-0Xg"/>
-                                    <constraint firstAttribute="height" constant="24" id="ud6-sb-eu1"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="clickOutput" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LvT-hz-PIA">
+                                <rect key="frame" x="143" y="153" width="89" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="kOE-j4-YKo" firstAttribute="top" secondItem="ypR-eh-pOi" secondAttribute="bottom" constant="7.5" id="Kee-QO-c3f"/>
-                            <constraint firstItem="x12-i2-fzd" firstAttribute="top" secondItem="nAT-j6-4O6" secondAttribute="top" id="RNx-Vf-Dsh"/>
-                            <constraint firstItem="ypR-eh-pOi" firstAttribute="centerY" secondItem="nAT-j6-4O6" secondAttribute="centerY" id="RqG-9P-JRX"/>
-                            <constraint firstItem="x12-i2-fzd" firstAttribute="trailing" secondItem="pwW-0y-ZW0" secondAttribute="trailing" id="Sq2-8e-qCl"/>
-                            <constraint firstItem="x12-i2-fzd" firstAttribute="leading" secondItem="pwW-0y-ZW0" secondAttribute="leading" id="WOS-46-6Tq"/>
-                            <constraint firstItem="x12-i2-fzd" firstAttribute="bottom" secondItem="pwW-0y-ZW0" secondAttribute="bottom" id="lzF-cu-u73"/>
-                            <constraint firstItem="ypR-eh-pOi" firstAttribute="centerX" secondItem="nAT-j6-4O6" secondAttribute="centerX" id="xK5-yQ-U2b"/>
-                            <constraint firstItem="kOE-j4-YKo" firstAttribute="centerX" secondItem="nAT-j6-4O6" secondAttribute="centerX" id="xKA-Bb-5Qm"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="pwW-0y-ZW0"/>
+                        <viewLayoutGuide key="safeArea" id="HZL-PJ-QPZ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Clicker" id="e9I-Z9-DPj"/>
+                    <connections>
+                        <outlet property="clickOutput" destination="LvT-hz-PIA" id="4Gy-LN-LbU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sy1-gM-zeO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="65" y="372"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="Rn4-29-4mI">
+            <objects>
+                <viewController storyboardIdentifier="gameVC" id="0kI-FP-hUo" customClass="GameViewController" customModule="Anibal_Morales_Soundboard" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xgl-V0-jEY"/>
+                        <viewControllerLayoutGuide type="bottom" id="8Tw-CQ-apg"/>
+                    </layoutGuides>
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="zDQ-5k-HXb" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="tkF-uf-e0u"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="M6m-Z8-orZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6lp-aB-Jxn" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="938.39999999999998" y="887.40629685157433"/>
+            <point key="canvasLocation" x="1458" y="372"/>
+        </scene>
+        <!--MenuVC-->
+        <scene sceneID="CBO-LB-9SZ">
+            <objects>
+                <viewController id="cjb-UN-mIN" userLabel="MenuVC" customClass="MenuVC" customModule="Anibal_Morales_Soundboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VWl-GJ-9o6"/>
+                        <viewControllerLayoutGuide type="bottom" id="GhG-KX-UYo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6Tb-06-P2i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCT-qe-0kR">
+                                <rect key="frame" x="171" y="299" width="33" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Easy"/>
+                                <connections>
+                                    <action selector="Easy:" destination="cjb-UN-mIN" eventType="touchUpInside" id="iHG-y6-KZt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M6f-8S-Z7D">
+                                <rect key="frame" x="160" y="355" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Medium"/>
+                                <connections>
+                                    <action selector="Medium:" destination="cjb-UN-mIN" eventType="touchUpInside" id="l8I-dU-meH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDR-SS-otr">
+                                <rect key="frame" x="160" y="115" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="2 Player"/>
+                                <connections>
+                                    <action selector="Player2:" destination="cjb-UN-mIN" eventType="touchUpInside" id="g7B-kK-pof"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x06-Hi-2SH">
+                                <rect key="frame" x="170" y="412" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Hard"/>
+                                <connections>
+                                    <action selector="Hard:" destination="cjb-UN-mIN" eventType="touchUpInside" id="twK-Re-IxW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="An8-Oi-MNH"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pong" id="ViT-hf-fzG"/>
+                    <navigationItem key="navigationItem" id="U9q-P2-x1l"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ymF-Qq-HXq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="778" y="372"/>
         </scene>
     </scenes>
     <resources>
@@ -304,4 +383,5 @@
         <image name="playaudiowhite" width="640" height="640"/>
         <image name="stopaudiowhite" width="640" height="640"/>
     </resources>
+    <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
