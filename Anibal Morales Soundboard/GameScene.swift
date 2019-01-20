@@ -28,7 +28,7 @@ class GameScene: SKScene {
         btmLbl = self.childNode(withName: "btmLabel") as! SKLabelNode
         ball = self.childNode(withName: "ball") as! SKSpriteNode
         
-        print(self.view?.bounds.height)
+        print(self.view?.bounds.height as Any)
         
         enemy = self.childNode(withName: "enemy") as! SKSpriteNode
         enemy.position.y = (self.frame.height / 2) - 50
