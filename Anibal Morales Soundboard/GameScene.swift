@@ -1,9 +1,9 @@
 //
 //  GameScene.swift
-//  Pong2
+//  Anibal Morales Soundboard
 //
-//  Created by Jared Davidson on 10/11/16.
-//  Copyright © 2016 Archetapp. All rights reserved.
+//  Created by Rogelio Schevenin on 3/27/18.
+//  Copyright © 2018 Rogelio Schevenin. All rights reserved.
 //
 
 import SpriteKit
@@ -14,6 +14,8 @@ class GameScene: SKScene {
     var ball = SKSpriteNode()
     var enemy = SKSpriteNode()
     var main = SKSpriteNode()
+    
+    
     
     var topLbl = SKLabelNode()
     var btmLbl = SKLabelNode()
@@ -136,10 +138,10 @@ class GameScene: SKScene {
         
         
         
-        if ball.position.y <= main.position.y - 30 {
+        if ball.position.y <= main.position.y - 10 {
             addScore(playerWhoWon: enemy)
         }
-        else if ball.position.y >= enemy.position.y + 30 {
+        else if ball.position.y >= enemy.position.y + 10 {
             addScore(playerWhoWon: main)
         }
     }

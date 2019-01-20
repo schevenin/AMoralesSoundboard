@@ -11,19 +11,6 @@ import AVFoundation
 
 class ViewController: UIViewController {
     
-    let backgroundImageView = UIImageView()
-    
-    func setBackground() {
-        view.addSubview(backgroundImageView)
-        backgroundImageView.translatesAutoresizingMaskIntoConstraints = false
-        backgroundImageView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        backgroundImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-        backgroundImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        backgroundImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        backgroundImageView.image = UIImage(named: "Wallpaper")
-        view.sendSubviewToBack(backgroundImageView)
-    }
-    
     func stopAudio() {
         audioPlayerGuatemalan.stop()
         audioPlayerChisme.stop()
@@ -31,10 +18,12 @@ class ViewController: UIViewController {
         audioPlayerEnamorado.stop()
         audioPlayerMijo.stop()
         audioPlayerMartin.stop()
+        
+        audioPlayerEnamorada.stop()
+        audioPlayerMija.stop()
+        audioPlayerMoney.stop()
+        audioPlayerSomething.stop()
     }
-    
-    
-    @IBOutlet weak var clickOutput: UILabel!
     
     @IBOutlet weak var buttonGuatemalan: UIButton!
     @IBOutlet weak var buttonMartin: UIButton!
@@ -42,11 +31,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var buttonPapas: UIButton!
     @IBOutlet weak var buttonEnamorado: UIButton!
     @IBOutlet weak var buttonMijo: UIButton!
-    @IBOutlet weak var buttonStop: UIButton!
     
-    @IBAction func buttonStop(_ sender: UIButton) {
-        stopAudio()
-    }
+    @IBOutlet weak var buttonEnamorada: UIButton!
+    @IBOutlet weak var buttonMija: UIButton!
+    @IBOutlet weak var buttonMoney: UIButton!
+    @IBOutlet weak var buttonSomething: UIButton!
+    
     @IBAction func buttonGuatemalan(_ sender: UIButton) {
         audioPlayerGuatemalan.play()
     }
@@ -65,6 +55,19 @@ class ViewController: UIViewController {
     @IBAction func buttonMijo(_ sender: UIButton) {
         audioPlayerMijo.play()
     }
+    @IBAction func buttonEnamorada(_ sender: UIButton) {
+        audioPlayerEnamorada.play()
+    }
+    @IBAction func buttonMija(_ sender: UIButton) {
+        audioPlayerMija.play()
+    }
+    @IBAction func buttonMoney(_ sender: UIButton) {
+        audioPlayerMoney.play()
+    }
+    @IBAction func buttonSomething(_ sender: UIButton) {
+        audioPlayerSomething.play()
+    }
+    
     
     var audioPlayerGuatemalan : AVAudioPlayer!
     var audioPlayerChisme : AVAudioPlayer!
@@ -72,6 +75,14 @@ class ViewController: UIViewController {
     var audioPlayerEnamorado : AVAudioPlayer!
     var audioPlayerMijo : AVAudioPlayer!
     var audioPlayerMartin: AVAudioPlayer!
+    
+    var audioPlayerEnamorada: AVAudioPlayer!
+    var audioPlayerMija: AVAudioPlayer!
+    var audioPlayerMoney: AVAudioPlayer!
+    var audioPlayerSomething: AVAudioPlayer!
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,6 +93,13 @@ class ViewController: UIViewController {
         let urlEnamorado = Bundle.main.url(forResource: "enamorado", withExtension: "mp3")
         let urlMijo = Bundle.main.url(forResource: "mijo", withExtension: "mp3")
         let urlMartin = Bundle.main.url(forResource: "martin", withExtension: "mp3")
+        
+        let urlEnamorada = Bundle.main.url(forResource: "enamorada", withExtension: "mp3")
+        let urlMija = Bundle.main.url(forResource: "mija", withExtension: "mp3")
+        let urlMoney = Bundle.main.url(forResource: "money", withExtension: "mp3")
+        let urlSomething = Bundle.main.url(forResource: "something", withExtension: "mp3")
+
+        
         
         do {
             audioPlayerGuatemalan = try AVAudioPlayer(contentsOf: urlGuatemalan!)
@@ -125,6 +143,34 @@ class ViewController: UIViewController {
         }catch let error as NSError {
             print(error.debugDescription)
         }
+//        do {
+//            audioPlayerEnamorada = try AVAudioPlayer(contentsOf: urlEnamorada!)
+//            audioPlayerEnamorada.prepareToPlay()
+//
+//        }catch let error as NSError {
+//            print(error.debugDescription)
+//        }
+//        do {
+//            audioPlayerMija = try AVAudioPlayer(contentsOf: urlMija!)
+//            audioPlayerMija.prepareToPlay()
+//
+//        }catch let error as NSError {
+//            print(error.debugDescription)
+//        }
+//        do {
+//            audioPlayerMoney = try AVAudioPlayer(contentsOf: urlMoney!)
+//            audioPlayerMoney.prepareToPlay()
+//
+//        }catch let error as NSError {
+//            print(error.debugDescription)
+//        }
+//        do {
+//            audioPlayerSomething = try AVAudioPlayer(contentsOf: urlSomething!)
+//            audioPlayerSomething.prepareToPlay()
+//
+//        }catch let error as NSError {
+//            print(error.debugDescription)
+//        }
     }
 }
 

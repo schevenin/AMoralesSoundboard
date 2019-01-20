@@ -1,9 +1,9 @@
 //
 //  MenuVC.swift
-//  Pong2
+//  Anibal Morales Soundboard
 //
-//  Created by Jared Davidson on 1/9/17.
-//  Copyright © 2017 Archetapp. All rights reserved.
+//  Created by Rogelio Schevenin on 3/27/18.
+//  Copyright © 2018 Rogelio Schevenin. All rights reserved.
 //
 
 import Foundation
@@ -23,15 +23,9 @@ class MenuVC : UIViewController {
         moveToGame(game: .player2)
     }
     
-    @IBAction func Easy(_ sender: Any) {
-        moveToGame(game: .easy)
-    }
     @IBAction func Medium(_ sender: Any) {
         moveToGame(game: .medium)
         
-    }
-    @IBAction func Hard(_ sender: Any) {
-        moveToGame(game: .hard)
     }
     
     func moveToGame(game : gameType) {

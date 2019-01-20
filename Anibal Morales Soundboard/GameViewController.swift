@@ -1,9 +1,9 @@
 //
-//  GameViewController.swift
-//  Pong2
+//  MenuVC.swift
+//  Anibal Morales Soundboard
 //
-//  Created by Jared Davidson on 10/11/16.
-//  Copyright © 2016 Archetapp. All rights reserved.
+//  Created by Rogelio Schevenin on 3/27/18.
+//  Copyright © 2018 Rogelio Schevenin. All rights reserved.
 //
 
 import UIKit
@@ -14,10 +14,13 @@ import GameplayKit
 var currentGameType = gameType.medium
 
 
-class GameViewController: UIViewController {
 
+class GameViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        self.tabBarController?.tabBar.isHidden = true
         
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
@@ -31,11 +34,13 @@ class GameViewController: UIViewController {
                 view.presentScene(scene)
             }
             
+            
             view.ignoresSiblingOrder = true
             
             view.showsFPS = true
-            view.showsNodeCount = true
+            view.showsNodeCount = false
         }
+        
     }
 
     override var shouldAutorotate: Bool {
