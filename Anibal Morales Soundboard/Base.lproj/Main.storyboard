@@ -184,8 +184,8 @@
                                                         <color key="textColor" red="0.99566453700000002" green="0.87450176479999997" blue="0.001211008755" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Something" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNQ-zu-Hbe">
-                                                        <rect key="frame" x="151" y="560" width="98" height="24"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COOKIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNQ-zu-Hbe">
+                                                        <rect key="frame" x="160" y="560" width="80" height="24"/>
                                                         <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="20"/>
                                                         <color key="textColor" red="0.99566453700000002" green="0.87450176479999997" blue="0.001211008755" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -226,7 +226,7 @@
                                                         </constraints>
                                                         <state key="normal" image="playaudio"/>
                                                         <connections>
-                                                            <action selector="buttonSomething:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ile-zP-cvp"/>
+                                                            <action selector="buttonCookies:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3ek-07-GYe"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MARTIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qoP-Ox-4yX">

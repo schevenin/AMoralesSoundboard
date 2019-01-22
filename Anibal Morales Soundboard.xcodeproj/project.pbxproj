@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		314DDAF821F79D6700C92A23 /* cookies.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 314DDAF421F79D6600C92A23 /* cookies.mp3 */; };
+		314DDAF921F79D6700C92A23 /* enamorada.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 314DDAF521F79D6600C92A23 /* enamorada.mp3 */; };
+		314DDAFA21F79D6700C92A23 /* mija.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 314DDAF621F79D6700C92A23 /* mija.mp3 */; };
+		314DDAFB21F79D6700C92A23 /* money.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 314DDAF721F79D6700C92A23 /* money.mp3 */; };
 		31E1906421EEE56300EE88F8 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E1906321EEE56300EE88F8 /* GameViewController.swift */; };
 		31E1906821EEE5F800EE88F8 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E1906521EEE5F700EE88F8 /* GameScene.swift */; };
 		31E1906921EEE5F800EE88F8 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 31E1906621EEE5F800EE88F8 /* Actions.sks */; };
@@ -26,6 +30,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		314DDAF421F79D6600C92A23 /* cookies.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cookies.mp3; sourceTree = "<group>"; };
+		314DDAF521F79D6600C92A23 /* enamorada.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = enamorada.mp3; sourceTree = "<group>"; };
+		314DDAF621F79D6700C92A23 /* mija.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mija.mp3; sourceTree = "<group>"; };
+		314DDAF721F79D6700C92A23 /* money.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = money.mp3; sourceTree = "<group>"; };
 		31E1906321EEE56300EE88F8 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		31E1906521EEE5F700EE88F8 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		31E1906621EEE5F800EE88F8 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
@@ -80,6 +88,10 @@
 				31E1906F21EEF7E500EE88F8 /* LLPIXEL3.ttf */,
 				31F71041217E40C500A7F85F /* chisme.mp3 */,
 				31F7103E217E40C500A7F85F /* guatemalan.mp3 */,
+				314DDAF421F79D6600C92A23 /* cookies.mp3 */,
+				314DDAF521F79D6600C92A23 /* enamorada.mp3 */,
+				314DDAF621F79D6700C92A23 /* mija.mp3 */,
+				314DDAF721F79D6700C92A23 /* money.mp3 */,
 				31F71040217E40C500A7F85F /* enamorado.mp3 */,
 				31F7103D217E40C500A7F85F /* mijo.mp3 */,
 				31F7103F217E40C500A7F85F /* papas.mp3 */,
@@ -159,15 +171,19 @@
 			files = (
 				31F71043217E40C600A7F85F /* guatemalan.mp3 in Resources */,
 				31F71046217E40C600A7F85F /* chisme.mp3 in Resources */,
+				314DDAF821F79D6700C92A23 /* cookies.mp3 in Resources */,
 				31F71020217D706100A7F85F /* LaunchScreen.storyboard in Resources */,
 				31E1906A21EEE5F800EE88F8 /* GameScene.sks in Resources */,
 				31F71044217E40C600A7F85F /* papas.mp3 in Resources */,
 				31F71045217E40C600A7F85F /* enamorado.mp3 in Resources */,
 				31F71042217E40C600A7F85F /* mijo.mp3 in Resources */,
 				31F7101D217D706100A7F85F /* Assets.xcassets in Resources */,
+				314DDAFA21F79D6700C92A23 /* mija.mp3 in Resources */,
 				31F0419721E9C8030092B380 /* martin.mp3 in Resources */,
+				314DDAFB21F79D6700C92A23 /* money.mp3 in Resources */,
 				31F7101B217D706000A7F85F /* Main.storyboard in Resources */,
 				31E1906921EEE5F800EE88F8 /* Actions.sks in Resources */,
+				314DDAF921F79D6700C92A23 /* enamorada.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         audioPlayerEnamorada.stop()
         audioPlayerMija.stop()
         audioPlayerMoney.stop()
-        audioPlayerSomething.stop()
+        audioPlayerCookies.stop()
     }
     
     @IBOutlet weak var buttonGuatemalan: UIButton!
@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var buttonEnamorada: UIButton!
     @IBOutlet weak var buttonMija: UIButton!
     @IBOutlet weak var buttonMoney: UIButton!
-    @IBOutlet weak var buttonSomething: UIButton!
+    @IBOutlet weak var buttonCookies: UIButton!
     
     @IBAction func buttonGuatemalan(_ sender: UIButton) {
         audioPlayerGuatemalan.play()
@@ -64,8 +64,8 @@ class ViewController: UIViewController {
     @IBAction func buttonMoney(_ sender: UIButton) {
         audioPlayerMoney.play()
     }
-    @IBAction func buttonSomething(_ sender: UIButton) {
-        audioPlayerSomething.play()
+    @IBAction func buttonCookies(_ sender: UIButton) {
+        audioPlayerCookies.play()
     }
     
     
@@ -79,7 +79,7 @@ class ViewController: UIViewController {
     var audioPlayerEnamorada: AVAudioPlayer!
     var audioPlayerMija: AVAudioPlayer!
     var audioPlayerMoney: AVAudioPlayer!
-    var audioPlayerSomething: AVAudioPlayer!
+    var audioPlayerCookies: AVAudioPlayer!
     
     
     
@@ -97,9 +97,7 @@ class ViewController: UIViewController {
         let urlEnamorada = Bundle.main.url(forResource: "enamorada", withExtension: "mp3")
         let urlMija = Bundle.main.url(forResource: "mija", withExtension: "mp3")
         let urlMoney = Bundle.main.url(forResource: "money", withExtension: "mp3")
-        let urlSomething = Bundle.main.url(forResource: "something", withExtension: "mp3")
-
-        
+        let urlCookies = Bundle.main.url(forResource: "cookies", withExtension: "mp3")
         
         do {
             audioPlayerGuatemalan = try AVAudioPlayer(contentsOf: urlGuatemalan!)
@@ -143,34 +141,34 @@ class ViewController: UIViewController {
         }catch let error as NSError {
             print(error.debugDescription)
         }
-//        do {
-//            audioPlayerEnamorada = try AVAudioPlayer(contentsOf: urlEnamorada!)
-//            audioPlayerEnamorada.prepareToPlay()
-//
-//        }catch let error as NSError {
-//            print(error.debugDescription)
-//        }
-//        do {
-//            audioPlayerMija = try AVAudioPlayer(contentsOf: urlMija!)
-//            audioPlayerMija.prepareToPlay()
-//
-//        }catch let error as NSError {
-//            print(error.debugDescription)
-//        }
-//        do {
-//            audioPlayerMoney = try AVAudioPlayer(contentsOf: urlMoney!)
-//            audioPlayerMoney.prepareToPlay()
-//
-//        }catch let error as NSError {
-//            print(error.debugDescription)
-//        }
-//        do {
-//            audioPlayerSomething = try AVAudioPlayer(contentsOf: urlSomething!)
-//            audioPlayerSomething.prepareToPlay()
-//
-//        }catch let error as NSError {
-//            print(error.debugDescription)
-//        }
+        do {
+            audioPlayerEnamorada = try AVAudioPlayer(contentsOf: urlEnamorada!)
+            audioPlayerEnamorada.prepareToPlay()
+
+        }catch let error as NSError {
+            print(error.debugDescription)
+        }
+        do {
+            audioPlayerMija = try AVAudioPlayer(contentsOf: urlMija!)
+            audioPlayerMija.prepareToPlay()
+
+        }catch let error as NSError {
+            print(error.debugDescription)
+        }
+        do {
+            audioPlayerMoney = try AVAudioPlayer(contentsOf: urlMoney!)
+            audioPlayerMoney.prepareToPlay()
+
+        }catch let error as NSError {
+            print(error.debugDescription)
+        }
+        do {
+            audioPlayerCookies = try AVAudioPlayer(contentsOf: urlCookies!)
+            audioPlayerCookies.prepareToPlay()
+
+        }catch let error as NSError {
+            print(error.debugDescription)
+        }
     }
 }
 
