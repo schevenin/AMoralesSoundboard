@@ -107,10 +107,10 @@
                                                         </constraints>
                                                         <state key="normal" image="playaudio"/>
                                                         <connections>
-                                                            <action selector="buttonMijo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oXM-zq-dkV"/>
+                                                            <action selector="buttonMija:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TsW-wj-xjL"/>
                                                         </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AY MIJO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWT-i0-bl7">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AY MIJO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWT-i0-bl7" userLabel="AY MIJO">
                                                         <rect key="frame" x="38" y="420" width="74" height="24"/>
                                                         <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="20"/>
                                                         <color key="textColor" red="0.99566453700000002" green="0.87450176479999997" blue="0.001211008755" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -124,7 +124,7 @@
                                                         </constraints>
                                                         <state key="normal" image="playaudio"/>
                                                         <connections>
-                                                            <action selector="buttonMija:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IIE-4h-uOW"/>
+                                                            <action selector="buttonMijo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vtv-OC-3GV"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AY MIJA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Bh-P1-vLA">
