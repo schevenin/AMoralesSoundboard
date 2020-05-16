@@ -17,21 +17,31 @@ class ViewController: UIViewController {
         audioPlayerPapas.stop()
         audioPlayerEnamorado.stop()
         audioPlayerMijo.stop()
+        audioPlayerMartin.stop()
+        
+        audioPlayerEnamorada.stop()
+        audioPlayerMija.stop()
+        audioPlayerMoney.stop()
+        audioPlayerCookies.stop()
     }
     
-    @IBOutlet weak var copyright: UILabel!
     @IBOutlet weak var buttonGuatemalan: UIButton!
+    @IBOutlet weak var buttonMartin: UIButton!
     @IBOutlet weak var buttonChisme: UIButton!
     @IBOutlet weak var buttonPapas: UIButton!
     @IBOutlet weak var buttonEnamorado: UIButton!
     @IBOutlet weak var buttonMijo: UIButton!
-    @IBOutlet weak var buttonStop: UIButton!
     
-    @IBAction func buttonStop(_ sender: UIButton) {
-        stopAudio()
-    }
+    @IBOutlet weak var buttonEnamorada: UIButton!
+    @IBOutlet weak var buttonMija: UIButton!
+    @IBOutlet weak var buttonMoney: UIButton!
+    @IBOutlet weak var buttonCookies: UIButton!
+    
     @IBAction func buttonGuatemalan(_ sender: UIButton) {
         audioPlayerGuatemalan.play()
+    }
+    @IBAction func buttonMartin(_ sender: UIButton) {
+        audioPlayerMartin.play()
     }
     @IBAction func buttonChisme(_ sender: UIButton) {
         audioPlayerChisme.play()
@@ -45,24 +55,60 @@ class ViewController: UIViewController {
     @IBAction func buttonMijo(_ sender: UIButton) {
         audioPlayerMijo.play()
     }
+    @IBAction func buttonEnamorada(_ sender: UIButton) {
+        audioPlayerEnamorada.play()
+    }
+    @IBAction func buttonMija(_ sender: UIButton) {
+        audioPlayerMija.play()
+    }
+    @IBAction func buttonMoney(_ sender: UIButton) {
+        audioPlayerMoney.play()
+    }
+    @IBAction func buttonCookies(_ sender: UIButton) {
+        audioPlayerCookies.play()
+    }
+    
+    
     var audioPlayerGuatemalan : AVAudioPlayer!
     var audioPlayerChisme : AVAudioPlayer!
     var audioPlayerPapas : AVAudioPlayer!
     var audioPlayerEnamorado : AVAudioPlayer!
     var audioPlayerMijo : AVAudioPlayer!
+    var audioPlayerMartin: AVAudioPlayer!
+    
+    var audioPlayerEnamorada: AVAudioPlayer!
+    var audioPlayerMija: AVAudioPlayer!
+    var audioPlayerMoney: AVAudioPlayer!
+    var audioPlayerCookies: AVAudioPlayer!
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-                
+        
         let urlGuatemalan = Bundle.main.url(forResource: "guatemalan", withExtension: "mp3")
         let urlChisme = Bundle.main.url(forResource: "chisme", withExtension: "mp3")
         let urlPapas = Bundle.main.url(forResource: "papas", withExtension: "mp3")
         let urlEnamorado = Bundle.main.url(forResource: "enamorado", withExtension: "mp3")
         let urlMijo = Bundle.main.url(forResource: "mijo", withExtension: "mp3")
+        let urlMartin = Bundle.main.url(forResource: "martin", withExtension: "mp3")
+        
+        let urlEnamorada = Bundle.main.url(forResource: "enamorada", withExtension: "mp3")
+        let urlMija = Bundle.main.url(forResource: "mija", withExtension: "mp3")
+        let urlMoney = Bundle.main.url(forResource: "money", withExtension: "mp3")
+        let urlCookies = Bundle.main.url(forResource: "cookies", withExtension: "mp3")
         
         do {
             audioPlayerGuatemalan = try AVAudioPlayer(contentsOf: urlGuatemalan!)
             audioPlayerGuatemalan.prepareToPlay()
+            
+        }catch let error as NSError {
+            print(error.debugDescription)
+        }
+        do {
+            audioPlayerMartin = try AVAudioPlayer(contentsOf: urlMartin!)
+            audioPlayerMartin.prepareToPlay()
             
         }catch let error as NSError {
             print(error.debugDescription)
@@ -92,6 +138,34 @@ class ViewController: UIViewController {
             audioPlayerMijo = try AVAudioPlayer(contentsOf: urlMijo!)
             audioPlayerMijo.prepareToPlay()
             
+        }catch let error as NSError {
+            print(error.debugDescription)
+        }
+        do {
+            audioPlayerEnamorada = try AVAudioPlayer(contentsOf: urlEnamorada!)
+            audioPlayerEnamorada.prepareToPlay()
+
+        }catch let error as NSError {
+            print(error.debugDescription)
+        }
+        do {
+            audioPlayerMija = try AVAudioPlayer(contentsOf: urlMija!)
+            audioPlayerMija.prepareToPlay()
+
+        }catch let error as NSError {
+            print(error.debugDescription)
+        }
+        do {
+            audioPlayerMoney = try AVAudioPlayer(contentsOf: urlMoney!)
+            audioPlayerMoney.prepareToPlay()
+
+        }catch let error as NSError {
+            print(error.debugDescription)
+        }
+        do {
+            audioPlayerCookies = try AVAudioPlayer(contentsOf: urlCookies!)
+            audioPlayerCookies.prepareToPlay()
+
         }catch let error as NSError {
             print(error.debugDescription)
         }

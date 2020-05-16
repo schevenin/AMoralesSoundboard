@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		314DDAF821F79D6700C92A23 /* cookies.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 314DDAF421F79D6600C92A23 /* cookies.mp3 */; };
+		314DDAF921F79D6700C92A23 /* enamorada.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 314DDAF521F79D6600C92A23 /* enamorada.mp3 */; };
+		314DDAFA21F79D6700C92A23 /* mija.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 314DDAF621F79D6700C92A23 /* mija.mp3 */; };
+		314DDAFB21F79D6700C92A23 /* money.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 314DDAF721F79D6700C92A23 /* money.mp3 */; };
+		31E1906421EEE56300EE88F8 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E1906321EEE56300EE88F8 /* GameViewController.swift */; };
+		31E1906821EEE5F800EE88F8 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E1906521EEE5F700EE88F8 /* GameScene.swift */; };
+		31E1906921EEE5F800EE88F8 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 31E1906621EEE5F800EE88F8 /* Actions.sks */; };
+		31E1906A21EEE5F800EE88F8 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 31E1906721EEE5F800EE88F8 /* GameScene.sks */; };
+		31E1906E21EEF02A00EE88F8 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E1906D21EEF02A00EE88F8 /* MenuVC.swift */; };
+		31F0419721E9C8030092B380 /* martin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 31F0419621E9C8030092B380 /* martin.mp3 */; };
 		31F71016217D706000A7F85F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F71015217D706000A7F85F /* AppDelegate.swift */; };
 		31F71018217D706000A7F85F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F71017217D706000A7F85F /* ViewController.swift */; };
 		31F7101B217D706000A7F85F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31F71019217D706000A7F85F /* Main.storyboard */; };
@@ -20,6 +30,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		314DDAF421F79D6600C92A23 /* cookies.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cookies.mp3; sourceTree = "<group>"; };
+		314DDAF521F79D6600C92A23 /* enamorada.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = enamorada.mp3; sourceTree = "<group>"; };
+		314DDAF621F79D6700C92A23 /* mija.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mija.mp3; sourceTree = "<group>"; };
+		314DDAF721F79D6700C92A23 /* money.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = money.mp3; sourceTree = "<group>"; };
+		31E1906321EEE56300EE88F8 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		31E1906521EEE5F700EE88F8 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		31E1906621EEE5F800EE88F8 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		31E1906721EEE5F800EE88F8 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		31E1906D21EEF02A00EE88F8 /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		31E1906F21EEF7E500EE88F8 /* LLPIXEL3.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LLPIXEL3.ttf; sourceTree = "<group>"; };
+		31F0419621E9C8030092B380 /* martin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = martin.mp3; path = Assets/Audio/martin.mp3; sourceTree = SOURCE_ROOT; };
 		31F71012217D706000A7F85F /* Anibal Morales Soundboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Anibal Morales Soundboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		31F71015217D706000A7F85F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31F71017217D706000A7F85F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,14 +85,25 @@
 		31F71014217D706000A7F85F /* Anibal Morales Soundboard */ = {
 			isa = PBXGroup;
 			children = (
+				31E1906F21EEF7E500EE88F8 /* LLPIXEL3.ttf */,
 				31F71041217E40C500A7F85F /* chisme.mp3 */,
 				31F7103E217E40C500A7F85F /* guatemalan.mp3 */,
+				314DDAF421F79D6600C92A23 /* cookies.mp3 */,
+				314DDAF521F79D6600C92A23 /* enamorada.mp3 */,
+				314DDAF621F79D6700C92A23 /* mija.mp3 */,
+				314DDAF721F79D6700C92A23 /* money.mp3 */,
 				31F71040217E40C500A7F85F /* enamorado.mp3 */,
 				31F7103D217E40C500A7F85F /* mijo.mp3 */,
 				31F7103F217E40C500A7F85F /* papas.mp3 */,
+				31F0419621E9C8030092B380 /* martin.mp3 */,
 				31F71015217D706000A7F85F /* AppDelegate.swift */,
-				31F71017217D706000A7F85F /* ViewController.swift */,
 				31F71019217D706000A7F85F /* Main.storyboard */,
+				31F71017217D706000A7F85F /* ViewController.swift */,
+				31E1906D21EEF02A00EE88F8 /* MenuVC.swift */,
+				31E1906321EEE56300EE88F8 /* GameViewController.swift */,
+				31E1906521EEE5F700EE88F8 /* GameScene.swift */,
+				31E1906721EEE5F800EE88F8 /* GameScene.sks */,
+				31E1906621EEE5F800EE88F8 /* Actions.sks */,
 				31F7101C217D706100A7F85F /* Assets.xcassets */,
 				31F7101E217D706100A7F85F /* LaunchScreen.storyboard */,
 				31F71021217D706100A7F85F /* Info.plist */,
@@ -107,7 +139,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 1000;
-				ORGANIZATIONNAME = ScheveninDevOrg;
+				ORGANIZATIONNAME = "Schevenin Developer Organization";
 				TargetAttributes = {
 					31F71011217D706000A7F85F = {
 						CreatedOnToolsVersion = 10.0;
@@ -139,12 +171,19 @@
 			files = (
 				31F71043217E40C600A7F85F /* guatemalan.mp3 in Resources */,
 				31F71046217E40C600A7F85F /* chisme.mp3 in Resources */,
+				314DDAF821F79D6700C92A23 /* cookies.mp3 in Resources */,
 				31F71020217D706100A7F85F /* LaunchScreen.storyboard in Resources */,
+				31E1906A21EEE5F800EE88F8 /* GameScene.sks in Resources */,
 				31F71044217E40C600A7F85F /* papas.mp3 in Resources */,
 				31F71045217E40C600A7F85F /* enamorado.mp3 in Resources */,
 				31F71042217E40C600A7F85F /* mijo.mp3 in Resources */,
 				31F7101D217D706100A7F85F /* Assets.xcassets in Resources */,
+				314DDAFA21F79D6700C92A23 /* mija.mp3 in Resources */,
+				31F0419721E9C8030092B380 /* martin.mp3 in Resources */,
+				314DDAFB21F79D6700C92A23 /* money.mp3 in Resources */,
 				31F7101B217D706000A7F85F /* Main.storyboard in Resources */,
+				31E1906921EEE5F800EE88F8 /* Actions.sks in Resources */,
+				314DDAF921F79D6700C92A23 /* enamorada.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,8 +194,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31E1906821EEE5F800EE88F8 /* GameScene.swift in Sources */,
+				31E1906421EEE56300EE88F8 /* GameViewController.swift in Sources */,
 				31F71018217D706000A7F85F /* ViewController.swift in Sources */,
 				31F71016217D706000A7F85F /* AppDelegate.swift in Sources */,
+				31E1906E21EEF02A00EE88F8 /* MenuVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,7 +344,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z2D62J633K;
 				INFOPLIST_FILE = "$(SRCROOT)/Anibal Morales Soundboard/Info.plist";
@@ -314,7 +355,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.schevenin.Guatemalan-Embassy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -322,7 +363,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z2D62J633K;
 				INFOPLIST_FILE = "$(SRCROOT)/Anibal Morales Soundboard/Info.plist";
@@ -334,7 +374,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.schevenin.Guatemalan-Embassy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
